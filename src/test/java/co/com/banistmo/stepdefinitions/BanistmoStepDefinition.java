@@ -1,5 +1,6 @@
 package co.com.banistmo.stepdefinitions;
 
+import co.com.banistmo.questions.TextValidation;
 import co.com.banistmo.tasks.SelectMenu;
 import cucumber.api.PendingException;
 import cucumber.api.java.Before;
@@ -7,6 +8,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import cucumber.api.junit.Cucumber;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.junit.runner.RunWith;
@@ -37,6 +39,6 @@ public class BanistmoStepDefinition {
 
     @Then("^the user should see the validation length$")
     public void the_user_should_see_the_validation_length() throws Throwable {
-
+        theActorInTheSpotlight().should(GivenWhenThen.seeThat(TextValidation.isVisible()));
     }
 }
