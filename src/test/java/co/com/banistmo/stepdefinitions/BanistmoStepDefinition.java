@@ -1,5 +1,6 @@
 package co.com.banistmo.stepdefinitions;
 
+import co.com.banistmo.tasks.SelectMenu;
 import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -20,20 +21,22 @@ public class BanistmoStepDefinition {
         setTheStage(OnlineCast.ofStandardActors());
     }
 
-    @Given("^dado que haga algo$")
-    public void dado_que_haga_algo() throws Throwable {
-       theActorCalled("user");
-       theActorInTheSpotlight().can(BrowseTheWeb.with((chrome())));
+    @Given("^the user need to enter the latam page$")
+    public void the_user_need_to_enter_the_latam_page() throws Throwable {
+        theActorCalled("user");
+        theActorInTheSpotlight().can(BrowseTheWeb.with(chrome()));
     }
 
-    @When("^interacciones$")
-    public void interacciones() throws Throwable {
+    @When("^the user search the infomation$")
+    public void the_user_search_the_infomation() throws Throwable {
+        theActorInTheSpotlight().attemptsTo(
+                SelectMenu.searchPage()
+        );
 
     }
 
-    @Then("^afirmacion validaciones$")
-    public void afirmacion_validaciones() throws Throwable {
-
+    @Then("^the user should see the validation length$")
+    public void the_user_should_see_the_validation_length() throws Throwable {
 
     }
 }

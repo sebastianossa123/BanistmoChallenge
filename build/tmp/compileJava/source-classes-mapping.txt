@@ -1,2 +1,6 @@
 co/com/banistmo/util/WebDriver.java
  co.com.banistmo.util.WebDriver
+co/com/banistmo/tasks/SelectMenu.java
+ co.com.banistmo.tasks.SelectMenu
+co/com/banistmo/userinterfaces/MenuPage.java
+ co.com.banistmo.userinterfaces.MenuPage

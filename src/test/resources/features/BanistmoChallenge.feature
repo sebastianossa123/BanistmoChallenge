@@ -1,7 +1,8 @@
-Feature: nn
+Feature: Open the LatamPage
 
   @Banistmo @TestCase1
-  Scenario: Definitions Pases
-    Given dado que haga algo
-    When interacciones
-    Then afirmacion validaciones
+  Scenario: Seccesful Case
+  Narrative: open the latam page and validate length
+    Given the user need to enter the latam page
+    When the user search the infomation
+    Then the user should see the validation length
