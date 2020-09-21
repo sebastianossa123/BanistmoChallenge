@@ -2,7 +2,13 @@ co/com/banistmo/util/WebDriver.java
  co.com.banistmo.util.WebDriver
 co/com/banistmo/tasks/SelectMenu.java
  co.com.banistmo.tasks.SelectMenu
+co/com/banistmo/questions/InscriptionValidation.java
+ co.com.banistmo.questions.InscriptionValidation
 co/com/banistmo/questions/TextValidation.java
  co.com.banistmo.questions.TextValidation
 co/com/banistmo/userinterfaces/MenuPage.java
  co.com.banistmo.userinterfaces.MenuPage
+co/com/banistmo/userinterfaces/HelpPage.java
+ co.com.banistmo.userinterfaces.HelpPage
+co/com/banistmo/tasks/HelpMenu.java
+ co.com.banistmo.tasks.HelpMenu

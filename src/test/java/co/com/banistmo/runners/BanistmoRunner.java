@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/BanistmoChallenge.feature",
+        features = "src/test/resources/features",
         glue = "co.com.banistmo.stepdefinitions",
         snippets = SnippetType.CAMELCASE
 )
